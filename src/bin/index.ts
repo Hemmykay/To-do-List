@@ -3,6 +3,6 @@
 import { registerCommands } from 'ts-commands';
 
 registerCommands({
-	name: '{{project-name}}',
+	name: 'to-do-list',
 	commands: [],
 });

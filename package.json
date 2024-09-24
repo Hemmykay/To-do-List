@@ -1,10 +1,10 @@
 {
-	"name": "{{project-name}}",
+	"name": "to-do-list",
 	"version": "1.0.0",
-	"description": "{{project-name}}",
+	"description": "to-do-list",
 	"private": "true",
 	"bin": {
-		"{{project-name}}": "./bin/index.js"
+		"to-do-list": "./bin/index.js"
 	},
 	"typescript-template": {
 		"base": "1.0.1",
@@ -45,14 +45,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/{{project-org}}/{{project-name}}.git"
+		"url": "git+https://github.com/to-do-list/to-do-list.git"
 	},
-	"author": "{{project-org}}",
+	"author": "to-do-list",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/{{project-org}}/{{project-name}}/issues"
+		"url": "https://github.com/to-do-list/to-do-list/issues"
 	},
-	"homepage": "https://github.com/{{project-org}}/{{project-name}}#readme",
+	"homepage": "https://github.com/to-do-list/to-do-list#readme",
 	"keywords": [],
 	"dependencies": {
 		"ts-commands": "^1.0.0"
