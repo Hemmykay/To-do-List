@@ -1,60 +1,20 @@
 {
-	"name": "to-do-list",
-	"version": "1.0.0",
-	"description": "to-do-list",
-	"private": "true",
-	"bin": {
-		"to-do-list": "./bin/index.js"
-	},
-	"typescript-template": {
-		"base": "1.0.1",
-		"cli": "1.0.0",
-		"jasmine": "1.0.0",
-		"library": "1.0.0"
-	},
-	"scripts": {
-		"build": "tsc",
-		"start": "ts-node examples/index",
-		"test": "npm run lint && npm run build && nyc npm run test:run",
-		"test:run": "jasmine --config=jasmine.json",
-		"test:dev": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.dev.json",
-		"doc": "typedoc --out docs/typedoc src",
-		"format": "prettier-eslint --write **/*.*",
-		"lint": "eslint .",
-		"lint:prod": "npm run lint -- --config=.eslintrc.prod.json",
-		"script": "ts-node scripts",
-		"publish": "npm run script -- publish"
-	},
-	"devDependencies": {
-		"@istanbuljs/nyc-config-typescript": "^1.0.2",
-		"@types/jasmine": "^5.1.4",
-		"@types/node": "^18.19.39",
-		"@typescript-eslint/eslint-plugin": "^7.13.1",
-		"eslint": "^8.57.0",
-		"jasmine": "^5.1.0",
-		"nyc": "^17.0.0",
-		"prettier": "^3.3.2",
-		"prettier-eslint": "^16.3.0",
-		"prettier-eslint-cli": "^8.0.1",
-		"ts-node": "^10.9.2",
-		"ts-packager": "^1.1.0",
-		"ts-script": "^1.0.0",
-		"ts-tiny-log": "^1.1.1",
-		"typedoc": "^0.26.1",
-		"typescript": "~5.4.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/to-do-list/to-do-list.git"
-	},
-	"author": "to-do-list",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/to-do-list/to-do-list/issues"
-	},
-	"homepage": "https://github.com/to-do-list/to-do-list#readme",
-	"keywords": [],
-	"dependencies": {
-		"ts-commands": "^1.0.0"
-	}
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+    "format": "prettier --write \"src/**/*.{ts,js}\"",
+    "lint": "prettier --check \"src/**/*.{ts,js}\""
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.2.0"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@types/canvas-confetti": "^1.0.0",
+    "@types/snowpack-env": "^2.3.3",
+    "prettier": "^2.2.1",
+    "snowpack": "^3.3.7",
+    "typescript": "^4.2.4"
+  }
 }
