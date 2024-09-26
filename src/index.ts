@@ -40,9 +40,9 @@ function addListItem(task: Task) {
     checkbox.addEventListener('change', () => {
         task.completed = checkbox.checked;
         saveTasks()
-        if (task.completed) {
-            item.remove()
-        }
+        // if (task.completed) {
+        //     item.remove()
+        // 
     })
     checkbox.type = 'checkbox';
     checkbox.checked = task.completed;
