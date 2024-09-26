@@ -54,13 +54,6 @@ function addListItem(task: Task) {
 function saveTasks() {
     localStorage.setItem('TASKS', JSON.stringify(tasks))
 }
-function removeCompletedTasks() {
-    const taske = JSON.parse(localStorage.getItem('TASKS') || '[]');
-    console.log(taske);
-    // const updatedTasks = tasks.filter((task) => !task.completed);
-    // localStorage.setItem('TASKS', JSON.stringify(updatedTasks));   
-}
- removeCompletedTasks()
 function loadTasks(): Task[] {
     const taskJSON = localStorage.getItem('TASKS')
     if (taskJSON == null) return []
